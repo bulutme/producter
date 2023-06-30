@@ -1,0 +1,84 @@
+.header {
+  height: 56px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+
+  .section {
+    display: flex;
+
+    .search {
+      position: relative;
+      width: 200px;
+
+      .searchInput {
+        width: 100%;
+        padding: 8px 28px;
+        border-radius: 4px;
+        background: rgba(140, 151, 172, 0.07);
+      }
+
+      .searchIcon {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .headerButton {
+      margin-left: 8px;
+      padding: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      background: rgba(140, 151, 172, 0.07);
+
+      &:hover {
+        border: 1px solid var(--color-gray);
+      }
+    }
+
+    .menu {
+      display: flex;
+      background-color: var(--color-white);
+
+      svg {
+        width: 24px;
+        height: 24px;
+        color: black;
+      }
+    }
+
+    .plusButton {
+      margin-left: 0;
+      border: 1px solid var(--color-light-blue);
+      background-color: var(--color-white);
+
+      &:hover {
+        background: rgba(140, 151, 172, 0.07);
+      }
+    }
+  }
+
+  .searchSection {
+    display: none;
+  }
+
+  .menuSection {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .searchSection {
+    display: flex !important;
+  }
+
+  .menuSection {
+    display: none !important;
+  }
+}

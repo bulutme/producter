@@ -1,0 +1,11 @@
+.noContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: calc(100vh - 56px);
+  font-size: var(--font-size-headline1);
+  font-weight: bold;
+  color: var(--color-gray);
+  background-color: #fafbfc;
+}

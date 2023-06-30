@@ -1,0 +1,61 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+  cursor: pointer;
+
+  color: var(--color-white);
+
+  &.fullWidth {
+    width: 100%;
+  }
+
+  &.withIcon {
+    svg {
+      display: block;
+
+      width: 24px;
+      height: 24px;
+
+      margin: 0 8px;
+    }
+  }
+
+  &.iconOnly {
+    padding: 0 16px;
+
+    svg {
+      display: block;
+
+      height: 40%;
+
+      fill: var(--color-gray);
+    }
+  }
+}
+
+.apiCallFinished {
+  padding: 0 25px;
+
+  cursor: not-allowed;
+}
+
+.activityIndicator {
+  margin-left: 14px;
+  padding: 0;
+
+  .buttonSpinner {
+    width: 16px;
+    height: 16px;
+
+    border-width: 2px;
+  }
+}
+
+@media (--min-xs) {
+  .button {
+    padding: 0 var(--button-horizontal-padding-xs);
+  }
+}

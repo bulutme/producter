@@ -1,0 +1,10 @@
+.content {
+  display: flex;
+  height: calc(100% - 56px);
+  flex: 1 1;
+  flex-direction: column;
+  bottom: 0;
+  background-color: #fafbfc;
+  width: 100%;
+  overflow: auto;
+}
