@@ -41,7 +41,6 @@ const cardSlice = createSlice({
       }
     },
     addItem: (state, action) => {
-      console.log(action.payload, "AAAAAA");
       const { id, priority, status, taskCount, taskId, ticket, title, user } =
         action.payload;
 
